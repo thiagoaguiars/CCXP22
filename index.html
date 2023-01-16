@@ -40,16 +40,25 @@
         </div>  
     </section>
     <p id="parAmarelo">AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</p>
-    <section id="tickets">
-        <div class="img">
-            <img src="imagens/qui.svg" onmouseover="highlightCard('#quinta')" onmouseout="highlightCard('#quinta')" id="quinta" alt="Quinta-feira">
-            <img src="imagens/sex.svg" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')" id="sexta" alt="Sexta-Feira">
-            <img src="imagens/esg.svg" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')" id="sabado" alt="Sábado">
-            <img src="imagens/dom.svg" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id= "domingo" alt="Domingo"> 
+    <section id="ing2">
+        <div id="img">
+            <img src="imagens/qui.svg" onclick="selectCard('#quinta')" class="card-ingressos" onmouseover="highlightCard('quinta')" onmouseout="highlightCard('quinta')" id="quinta" alt="Quinta-feira">
+            <img src="imagens/sex.svg" onclick="selectCard('#sexta')" class="card-ingressos"  onmouseover="highlightCard('sexta')" onmouseout="highlightCard('sexta')" id="sexta" alt="Sexta-Feira">
+            <img src="imagens/esg.svg" onclick="selectCard('#sabado')" class="card-ingressos"  onmouseover="highlightCard('sabado')" onmouseout="highlightCard('sabado')" id="sabado" alt="Sábado">
+            <img src="imagens/dom.svg" onclick="selectCard('#domingo')" class="card-ingresso" onmouseover="highlightCard('domingo')" onmouseout="highlightCard('domingo')" id= "domingo" alt="Domingo"> 
         </div>
-        <button>GARANTA O SEU!</button>
+        <button onclick="showSelectedCards()">GARANTA O SEU!</button>
     </section>
+
+    <div>
+        <form action="https://www.google.com">
+          <input type="email" placeholder="Seu email" required />
+          <input type="submit" />
+        </form>
+      </div>
+
     <script src="script.js"></script>
+    <script src="main.js"></script>
     
 </body>
 </html>
